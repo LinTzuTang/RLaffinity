@@ -1,0 +1,13 @@
+REMARK Selection '(segment C and ... (resname HOH))'
+HETATM    1  N9  7DG A 102      -0.790   4.863  21.596  1.00 38.41         C N  
+HETATM    2  C8  7DG A 102       0.362   5.143  20.972  1.00 38.88         C C  
+HETATM    3  C7  7DG A 102       1.069   6.060  21.754  1.00 42.01         C C  
+HETATM    4  C5  7DG A 102       0.263   6.324  22.909  1.00 38.91         C C  
+HETATM    5  C6  7DG A 102       0.405   7.147  24.062  1.00 40.97         C C  
+HETATM    6  O6  7DG A 102       1.532   7.924  24.230  1.00 43.26         C O  
+HETATM    7  N1  7DG A 102      -0.577   7.162  24.995  1.00 39.60         C N  
+HETATM    8  C2  7DG A 102      -1.677   6.403  24.828  1.00 35.81         C C  
+HETATM    9  N2  7DG A 102      -2.711   6.428  25.810  1.00 36.35         C N  
+HETATM   10  N3  7DG A 102      -1.837   5.624  23.758  1.00 35.55         C N  
+HETATM   11  C4  7DG A 102      -0.876   5.565  22.772  1.00 38.44         C C  
+END   

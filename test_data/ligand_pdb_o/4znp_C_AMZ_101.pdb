@@ -1,0 +1,24 @@
+REMARK Selection '(segment C and ... (resname HOH))'
+HETATM    1  O5  AMZ A 101      57.376 -18.327   8.179  1.00 70.25         C O  
+HETATM    2  C6  AMZ A 101      56.836 -17.248   8.111  1.00 69.49         C C  
+HETATM    3  N2  AMZ A 101      55.672 -17.083   7.508  1.00 73.28         C N  
+HETATM    4  C3A AMZ A 101      57.493 -16.058   8.670  1.00 70.59         C C  
+HETATM    5  C7A AMZ A 101      58.842 -16.033   9.240  1.00 71.90         C C  
+HETATM    6  N3  AMZ A 101      59.667 -17.096   9.353  1.00 66.78         C N  
+HETATM    7  N1  AMZ A 101      57.057 -14.794   8.791  1.00 71.72         C N  
+HETATM    8  C5  AMZ A 101      58.047 -14.048   9.355  1.00 72.19         C C  
+HETATM    9  N   AMZ A 101      59.142 -14.798   9.626  1.00 75.44         C N  
+HETATM   10  C1  AMZ A 101      60.404 -14.306  10.243  1.00 74.92         C C  
+HETATM   11  C2  AMZ A 101      61.165 -13.476   9.232  1.00 71.73         C C  
+HETATM   12  C3  AMZ A 101      61.739 -12.349  10.051  1.00 71.09         C C  
+HETATM   13  O2  AMZ A 101      63.040 -12.711  10.531  1.00 72.88         C O  
+HETATM   14  O1  AMZ A 101      62.184 -14.255   8.586  1.00 75.51         C O  
+HETATM   15  O   AMZ A 101      60.114 -13.432  11.331  1.00 73.19         C O  
+HETATM   16  C   AMZ A 101      60.812 -12.214  11.231  1.00 67.83         C C  
+HETATM   17  C4  AMZ A 101      59.755 -11.134  11.127  1.00 69.12         C C  
+HETATM   18  O3  AMZ A 101      60.212 -10.026  10.379  1.00 70.67         C O  
+HETATM   19  P   AMZ A 101      59.795  -8.559  10.855  1.00 70.59         C P  
+HETATM   20  OP1 AMZ A 101      61.064  -7.737  10.751  1.00 71.55         C O  
+HETATM   21  O4  AMZ A 101      59.310  -8.807  12.260  1.00 91.88         C O  
+HETATM   22  OP2 AMZ A 101      58.676  -8.195   9.919  1.00 88.93         C O  
+END   

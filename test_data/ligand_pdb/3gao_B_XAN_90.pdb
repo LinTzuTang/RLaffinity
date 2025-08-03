@@ -1,0 +1,13 @@
+REMARK Selection '(segment B and ... (resname HOH))'
+HETATM    1  N9  XAN A  90      10.467  12.709   6.206  1.00 22.88         B N  
+HETATM    2  C4  XAN A  90      10.897  12.230   7.419  1.00 23.10         B C  
+HETATM    3  N3  XAN A  90      10.849  12.923   8.600  1.00 23.73         B N  
+HETATM    4  C2  XAN A  90      11.342  12.217   9.691  1.00 24.13         B C  
+HETATM    5  O2  XAN A  90      11.352  12.732  10.821  1.00 24.67         B O  
+HETATM    6  N1  XAN A  90      11.837  10.896   9.509  1.00 22.88         B N  
+HETATM    7  C6  XAN A  90      11.891  10.174   8.296  1.00 21.38         B C  
+HETATM    8  O6  XAN A  90      12.343   9.033   8.274  1.00 21.48         B O  
+HETATM    9  C5  XAN A  90      11.368  10.946   7.194  1.00 22.76         B C  
+HETATM   10  N7  XAN A  90      11.232  10.628   5.857  1.00 22.83         B N  
+HETATM   11  C8  XAN A  90      10.699  11.697   5.324  1.00 22.25         B C  
+END   

@@ -1,0 +1,12 @@
+REMARK Selection '(segment J and ... (resname HOH))'
+HETATM    1  NAC ZZR A1089      11.859  -3.024   6.154  1.00 21.70         J N  
+HETATM    2  NAF ZZR A1089      12.252  -3.508   7.225  1.00 22.38         J N  
+HETATM    3  CAI ZZR A1089      12.083  -2.618   8.215  1.00 22.11         J C  
+HETATM    4  NAD ZZR A1089      12.262  -2.415   9.522  1.00 21.42         J N  
+HETATM    5  CAG ZZR A1089      11.830  -1.175   9.723  1.00 23.09         J C  
+HETATM    6  NAA ZZR A1089      11.814  -0.556  10.909  1.00 22.88         J N  
+HETATM    7  NAE ZZR A1089      11.397  -0.650   8.562  1.00 22.02         J N  
+HETATM    8  NAJ ZZR A1089      11.550  -1.512   7.682  1.00 21.86         J N  
+HETATM    9  CAH ZZR A1089      11.424  -1.792   6.390  1.00 21.36         J C  
+HETATM   10  NAB ZZR A1089      10.922  -0.981   5.464  1.00 21.97         J N  
+END   

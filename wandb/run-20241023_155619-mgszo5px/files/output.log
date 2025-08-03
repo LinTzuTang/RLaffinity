@@ -1,0 +1,1003 @@
+/blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/train_model_pdbbind.py:137: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  pre_model.load_state_dict(torch.load('pth/model_stage1_epoch20.pth'), strict=False)
+CNN3D_LBA(
+  (model): Sequential(
+    (0): Conv3d(32, 32, kernel_size=(3, 3, 3), stride=(1, 1, 1))
+    (1): ReLU()
+    (2): Dropout(p=0.1, inplace=False)
+    (3): Conv3d(32, 64, kernel_size=(3, 3, 3), stride=(1, 1, 1))
+    (4): ReLU()
+    (5): MaxPool3d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (6): Dropout(p=0.1, inplace=False)
+    (7): Conv3d(64, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1))
+    (8): ReLU()
+    (9): Dropout(p=0.1, inplace=False)
+    (10): Conv3d(128, 256, kernel_size=(3, 3, 3), stride=(1, 1, 1))
+    (11): ReLU()
+    (12): MaxPool3d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (13): Dropout(p=0.1, inplace=False)
+    (14): Flatten(start_dim=1, end_dim=-1)
+    (15): Linear(in_features=2048, out_features=512, bias=True)
+    (16): ReLU()
+    (17): Dropout(p=0.25, inplace=False)
+    (18): Linear(in_features=512, out_features=1, bias=True)
+  )
+)
+
+
+train loss: 5.041586: 100%|██████████| 5/5 [00:39<00:00,  7.85s/it]
+Save model at epoch 001, val_loss: 2.3676
+Epoch 001 finished in : 40.849 s
+	Train RMSE: 2.5243353, Val RMSE: 2.3676247, Pearson R: 0.2400795, Spearman R: 0.6079055
+train loss: 2.232471: 100%|██████████| 5/5 [00:01<00:00,  4.38it/s]
+Save model at epoch 002, val_loss: 1.7774
+Epoch 002 finished in : 2.298 s
+	Train RMSE: 1.8846816, Val RMSE: 1.7773866, Pearson R: 0.2072741, Spearman R: 0.4620082
+train loss: 2.069037: 100%|██████████| 5/5 [00:01<00:00,  4.80it/s]
+train loss: 2.010600:  40%|████      | 2/5 [00:00<00:01,  2.39it/s]
+Epoch 003 finished in : 2.485 s
+
+train loss: 1.781345: 100%|██████████| 5/5 [00:02<00:00,  2.15it/s]
+train loss: 1.738934: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Save model at epoch 004, val_loss: 1.5905
+Epoch 004 finished in : 3.731 s
+	Train RMSE: 1.5397027, Val RMSE: 1.5904627, Pearson R: 0.2300646, Spearman R: 0.5957474
+train loss: 1.696861:  80%|████████  | 4/5 [00:00<00:00,  4.32it/s]
+Epoch 005 finished in : 2.177 s
+train loss: 1.663485: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+train loss: 1.811006:  60%|██████    | 3/5 [00:00<00:00,  4.90it/s]
+Epoch 006 finished in : 2.278 s
+train loss: 1.641420: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 1.720954:  60%|██████    | 3/5 [00:00<00:00,  4.90it/s]
+Save model at epoch 007, val_loss: 1.5890
+Epoch 007 finished in : 2.184 s
+train loss: 1.721394: 100%|██████████| 5/5 [00:01<00:00,  4.47it/s]
+train loss: 2.141983:  20%|██        | 1/5 [00:00<00:00,  4.66it/s]
+Epoch 008 finished in : 2.266 s
+train loss: 1.632087: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 009 finished in : 2.168 s
+
+train loss: 1.610063: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s]
+Save model at epoch 010, val_loss: 1.5847
+Epoch 010 finished in : 2.288 s
+	Train RMSE: 1.7039285, Val RMSE: 1.5847311, Pearson R: 0.2545623, Spearman R: 0.6808542
+train loss: 1.557519: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 011 finished in : 2.170 s
+	Train RMSE: 1.8594864, Val RMSE: 1.7511625, Pearson R: 0.1801978, Spearman R: 0.6200637
+train loss: 1.520584: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s]
+Epoch 012 finished in : 2.260 s
+	Train RMSE: 1.6002592, Val RMSE: 1.5965152, Pearson R: 0.2332987, Spearman R: 0.7538029
+train loss: 1.614071: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.622066: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+Epoch 013 finished in : 2.270 s
+	Train RMSE: 1.8892974, Val RMSE: 1.7888658, Pearson R: 0.1449699, Spearman R: 0.6686961
+train loss: 1.414809:  80%|████████  | 4/5 [00:00<00:00,  4.81it/s]
+Epoch 014 finished in : 2.177 s
+train loss: 1.432179: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 1.682835:  60%|██████    | 3/5 [00:00<00:00,  4.77it/s]
+Save model at epoch 015, val_loss: 1.5766
+Epoch 015 finished in : 2.302 s
+train loss: 1.559789: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+train loss: 1.691493:  40%|████      | 2/5 [00:00<00:00,  4.81it/s]
+Epoch 016 finished in : 2.176 s
+train loss: 1.606081: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 017 finished in : 2.275 s
+
+train loss: 1.660707: 100%|██████████| 5/5 [00:02<00:00,  2.46it/s]
+train loss: 1.458217:  40%|████      | 2/5 [00:00<00:00,  4.86it/s]
+Epoch 018 finished in : 3.876 s
+train loss: 1.615124: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 019 finished in : 2.269 s
+
+train loss: 1.578407: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 020 finished in : 2.169 s
+	Train RMSE: 1.8029677, Val RMSE: 1.7311213, Pearson R: 0.1754445, Spearman R: 0.5531940
+train loss: 1.537639: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 021 finished in : 2.263 s
+	Train RMSE: 1.6724786, Val RMSE: 1.6283257, Pearson R: 0.1929932, Spearman R: 0.6322218
+train loss: 1.591309: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 022 finished in : 2.167 s
+	Train RMSE: 1.7747573, Val RMSE: 1.6956148, Pearson R: 0.1488772, Spearman R: 0.5288778
+train loss: 1.551632: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+train loss: 1.513717: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 023 finished in : 2.276 s
+	Train RMSE: 1.6832523, Val RMSE: 1.6210860, Pearson R: 0.1948520, Spearman R: 0.7538029
+train loss: 1.659764: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 024 finished in : 2.173 s
+	Train RMSE: 1.7507998, Val RMSE: 1.6756173, Pearson R: 0.1775230, Spearman R: 0.6200637
+train loss: 1.667125:  80%|████████  | 4/5 [00:00<00:00,  4.89it/s]
+Epoch 025 finished in : 2.277 s
+train loss: 1.619368: 100%|██████████| 5/5 [00:01<00:00,  4.91it/s]
+train loss: 1.578530:  60%|██████    | 3/5 [00:00<00:00,  4.84it/s]
+Save model at epoch 026, val_loss: 1.5548
+Epoch 026 finished in : 2.186 s
+train loss: 1.565452: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 1.381762:  20%|██        | 1/5 [00:00<00:00,  4.92it/s]
+Epoch 027 finished in : 2.269 s
+train loss: 1.676569: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 028 finished in : 2.175 s
+
+train loss: 1.547404: 100%|██████████| 5/5 [00:01<00:00,  4.91it/s]
+Epoch 029 finished in : 2.261 s
+	Train RMSE: 1.8248141, Val RMSE: 1.7244284, Pearson R: 0.1791560, Spearman R: 0.5592731
+train loss: 1.625535: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 030 finished in : 2.174 s
+	Train RMSE: 1.6256852, Val RMSE: 1.6630921, Pearson R: 0.1374131, Spearman R: 0.5288778
+train loss: 1.513108: 100%|██████████| 5/5 [00:01<00:00,  4.42it/s]
+Epoch 031 finished in : 2.270 s
+	Train RMSE: 1.7757405, Val RMSE: 1.6843817, Pearson R: 0.1941987, Spearman R: 0.7112495
+train loss: 1.523853: 100%|██████████| 5/5 [00:01<00:00,  3.38it/s]
+Epoch 032 finished in : 3.820 s
+	Train RMSE: 1.7115223, Val RMSE: 1.6712180, Pearson R: 0.1533199, Spearman R: 0.4863244
+train loss: 1.463797: 100%|██████████| 5/5 [00:01<00:00,  4.06it/s]
+Epoch 033 finished in : 2.367 s
+	Train RMSE: 1.8116739, Val RMSE: 1.7578126, Pearson R: 0.0944304, Spearman R: 0.3829805
+train loss: 1.571052: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.509038: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 034 finished in : 2.172 s
+	Train RMSE: 1.7322178, Val RMSE: 1.6364102, Pearson R: 0.2376846, Spearman R: 0.6200637
+train loss: 1.702941:  60%|██████    | 3/5 [00:00<00:00,  4.92it/s]
+Epoch 035 finished in : 2.266 s
+train loss: 1.621985: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 1.592989:  60%|██████    | 3/5 [00:00<00:00,  4.92it/s]
+Epoch 036 finished in : 2.185 s
+train loss: 1.619979: 100%|██████████| 5/5 [00:01<00:00,  4.91it/s]
+train loss: 1.814960:  40%|████      | 2/5 [00:00<00:00,  5.12it/s]
+Epoch 037 finished in : 2.267 s
+train loss: 1.659197: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 2.192606:  20%|██        | 1/5 [00:00<00:00,  4.77it/s]
+Epoch 038 finished in : 2.169 s
+
+train loss: 1.552584: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+Epoch 039 finished in : 2.266 s
+	Train RMSE: 1.8688069, Val RMSE: 1.7762500, Pearson R: 0.2015023, Spearman R: 0.5957474
+train loss: 1.690644: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 040 finished in : 2.172 s
+	Train RMSE: 1.6282154, Val RMSE: 1.6437306, Pearson R: 0.1226507, Spearman R: 0.4680873
+train loss: 1.724784: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 041 finished in : 2.277 s
+	Train RMSE: 2.0719438, Val RMSE: 1.9239606, Pearson R: 0.1726850, Spearman R: 0.5714312
+train loss: 1.624402: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 042 finished in : 2.169 s
+	Train RMSE: 1.5771263, Val RMSE: 1.5915683, Pearson R: 0.1772329, Spearman R: 0.6322218
+train loss: 1.580186: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 1.627042: 100%|██████████| 5/5 [00:01<00:00,  4.81it/s]
+Epoch 043 finished in : 2.274 s
+	Train RMSE: 1.8633247, Val RMSE: 1.7656822, Pearson R: 0.1656053, Spearman R: 0.6747752
+train loss: 1.678248:  80%|████████  | 4/5 [00:00<00:00,  4.94it/s]
+Epoch 044 finished in : 2.186 s
+train loss: 1.633086: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.488277:  60%|██████    | 3/5 [00:00<00:00,  5.01it/s]
+Epoch 045 finished in : 2.270 s
+
+train loss: 1.512013: 100%|██████████| 5/5 [00:01<00:00,  4.91it/s]
+Epoch 046 finished in : 3.269 s
+	Train RMSE: 1.6715320, Val RMSE: 1.6505860, Pearson R: 0.1635780, Spearman R: 0.6079055
+train loss: 1.529272: 100%|██████████| 5/5 [00:01<00:00,  3.00it/s]
+train loss: 1.485636:  40%|████      | 2/5 [00:00<00:00,  4.83it/s]
+Epoch 047 finished in : 2.912 s
+train loss: 1.513809: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.646905:  20%|██        | 1/5 [00:00<00:00,  4.74it/s]
+Epoch 048 finished in : 2.182 s
+train loss: 1.580432: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 049 finished in : 2.272 s
+
+train loss: 1.560386: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 050 finished in : 2.165 s
+	Train RMSE: 1.5388261, Val RMSE: 1.5638333, Pearson R: 0.1460957, Spearman R: 0.5653522
+train loss: 1.594543: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 051 finished in : 2.263 s
+	Train RMSE: 1.9984751, Val RMSE: 1.8909351, Pearson R: 0.1698818, Spearman R: 0.6443799
+train loss: 1.656773: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 052 finished in : 2.172 s
+	Train RMSE: 1.5997792, Val RMSE: 1.6138777, Pearson R: 0.0928298, Spearman R: 0.4498501
+train loss: 1.607863: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.544923: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 053 finished in : 2.274 s
+	Train RMSE: 1.8422388, Val RMSE: 1.7017798, Pearson R: 0.2539043, Spearman R: 0.5835893
+train loss: 1.694771:  80%|████████  | 4/5 [00:00<00:00,  4.77it/s]
+Epoch 054 finished in : 2.171 s
+train loss: 1.644099: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.762690:  60%|██████    | 3/5 [00:00<00:00,  4.81it/s]
+Epoch 055 finished in : 2.276 s
+train loss: 1.629720: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 1.588011:  40%|████      | 2/5 [00:00<00:00,  5.10it/s]
+Epoch 056 finished in : 2.174 s
+train loss: 1.526678: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+train loss: 1.501326:  20%|██        | 1/5 [00:00<00:00,  5.07it/s]
+Epoch 057 finished in : 2.273 s
+train loss: 1.637970: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 058 finished in : 2.173 s
+
+train loss: 1.551720: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+Epoch 059 finished in : 2.267 s
+	Train RMSE: 1.5985386, Val RMSE: 1.5753324, Pearson R: 0.1933746, Spearman R: 0.8206725
+train loss: 1.569982: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 1.585767:  40%|████      | 2/5 [00:00<00:01,  2.31it/s]
+Epoch 060 finished in : 2.725 s
+
+train loss: 1.601671: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s]
+Epoch 061 finished in : 3.456 s
+	Train RMSE: 1.6096245, Val RMSE: 1.6412756, Pearson R: 0.1010902, Spearman R: 0.5835893
+train loss: 1.720535: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+Epoch 062 finished in : 2.176 s
+	Train RMSE: 2.0224524, Val RMSE: 1.9048019, Pearson R: 0.1578120, Spearman R: 0.6200637
+train loss: 1.689622: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 1.597805: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+Epoch 063 finished in : 2.176 s
+	Train RMSE: 1.6760953, Val RMSE: 1.6678943, Pearson R: 0.1095939, Spearman R: 0.6443799
+train loss: 1.816319:  80%|████████  | 4/5 [00:00<00:00,  4.71it/s]
+Epoch 064 finished in : 2.269 s
+train loss: 1.769137: 100%|██████████| 5/5 [00:01<00:00,  4.73it/s]
+train loss: 1.512232:  60%|██████    | 3/5 [00:00<00:00,  4.84it/s]
+Epoch 065 finished in : 2.301 s
+train loss: 1.563324: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.201718:  40%|████      | 2/5 [00:00<00:00,  4.92it/s]
+Epoch 066 finished in : 2.182 s
+train loss: 1.611003: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+train loss: 1.752574:  20%|██        | 1/5 [00:00<00:00,  4.96it/s]
+Epoch 067 finished in : 2.271 s
+train loss: 1.580076: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 068 finished in : 2.173 s
+
+train loss: 1.600799: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 069 finished in : 2.272 s
+	Train RMSE: 1.9339825, Val RMSE: 1.8089715, Pearson R: 0.2131915, Spearman R: 0.6808542
+train loss: 1.546112: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 070 finished in : 2.175 s
+	Train RMSE: 1.6098438, Val RMSE: 1.5702463, Pearson R: 0.1847933, Spearman R: 0.7659610
+train loss: 1.638078: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 071 finished in : 2.267 s
+	Train RMSE: 1.9888092, Val RMSE: 1.8863126, Pearson R: 0.1388222, Spearman R: 0.5835893
+train loss: 1.504079: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.635114: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+Epoch 072 finished in : 2.174 s
+	Train RMSE: 1.5915463, Val RMSE: 1.6233161, Pearson R: 0.1006937, Spearman R: 0.7416448
+train loss: 1.475834:  80%|████████  | 4/5 [00:00<00:00,  4.81it/s]
+Epoch 073 finished in : 2.264 s
+train loss: 1.542096: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.636857:  20%|██        | 1/5 [00:00<00:01,  2.29it/s]
+Epoch 074 finished in : 2.175 s
+
+train loss: 1.683148: 100%|██████████| 5/5 [00:02<00:00,  2.39it/s]
+train loss: 1.819147:  60%|██████    | 3/5 [00:00<00:00,  4.94it/s]
+Epoch 075 finished in : 4.012 s
+train loss: 1.652955: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+train loss: 1.333083:  40%|████      | 2/5 [00:00<00:00,  4.87it/s]
+Epoch 076 finished in : 2.169 s
+train loss: 1.519098: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.675722:  20%|██        | 1/5 [00:00<00:01,  3.21it/s]
+Epoch 077 finished in : 2.182 s
+train loss: 1.554494: 100%|██████████| 5/5 [00:01<00:00,  4.46it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 078 finished in : 2.274 s
+
+train loss: 1.531792: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+Epoch 079 finished in : 2.176 s
+	Train RMSE: 1.7788164, Val RMSE: 1.6942769, Pearson R: 0.1708869, Spearman R: 0.6079055
+train loss: 1.602920: 100%|██████████| 5/5 [00:01<00:00,  4.46it/s]
+Epoch 080 finished in : 2.265 s
+	Train RMSE: 1.7783731, Val RMSE: 1.7117335, Pearson R: 0.1167443, Spearman R: 0.3769014
+train loss: 1.755662: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 081 finished in : 2.174 s
+	Train RMSE: 1.6320137, Val RMSE: 1.6186448, Pearson R: 0.1501335, Spearman R: 0.7416448
+train loss: 1.605865: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+train loss: 1.550656: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 082 finished in : 2.267 s
+	Train RMSE: 1.7941080, Val RMSE: 1.7665260, Pearson R: 0.1075756, Spearman R: 0.5896684
+train loss: 1.689437:  80%|████████  | 4/5 [00:00<00:00,  4.15it/s]
+Epoch 083 finished in : 2.173 s
+train loss: 1.671484: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s]
+train loss: 1.512332:  80%|████████  | 4/5 [00:00<00:00,  4.89it/s]
+Epoch 084 finished in : 2.266 s
+train loss: 1.564155: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.598588:  60%|██████    | 3/5 [00:00<00:00,  4.78it/s]
+Epoch 085 finished in : 2.171 s
+train loss: 1.587761: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]
+train loss: 1.557048:  40%|████      | 2/5 [00:00<00:00,  5.17it/s]
+Epoch 086 finished in : 2.278 s
+train loss: 1.676285: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 087 finished in : 2.184 s
+
+train loss: 1.568867: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s]
+Epoch 088 finished in : 2.267 s
+	Train RMSE: 1.7234692, Val RMSE: 1.6982831, Pearson R: 0.1349278, Spearman R: 0.6200637
+train loss: 1.571114: 100%|██████████| 5/5 [00:01<00:00,  3.13it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 089 finished in : 3.902 s
+
+train loss: 1.525295: 100%|██████████| 5/5 [00:01<00:00,  4.47it/s]
+Epoch 090 finished in : 2.265 s
+	Train RMSE: 1.7838485, Val RMSE: 1.6547672, Pearson R: 0.1964251, Spearman R: 0.5471150
+train loss: 1.633415: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 091 finished in : 2.183 s
+	Train RMSE: 1.5908992, Val RMSE: 1.5807967, Pearson R: 0.1702741, Spearman R: 0.6443799
+train loss: 1.556922: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]
+train loss: 1.551621: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 092 finished in : 2.268 s
+	Train RMSE: 1.7641555, Val RMSE: 1.7393662, Pearson R: 0.0561137, Spearman R: 0.4863244
+train loss: 1.701331: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 093 finished in : 2.277 s
+	Train RMSE: 1.8376074, Val RMSE: 1.6980411, Pearson R: 0.1918572, Spearman R: 0.5835893
+train loss: 1.616579:  80%|████████  | 4/5 [00:00<00:00,  4.95it/s]
+Epoch 094 finished in : 2.171 s
+train loss: 1.715708: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.457572:  60%|██████    | 3/5 [00:00<00:00,  4.28it/s]
+Epoch 095 finished in : 2.172 s
+train loss: 1.652216: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s]
+train loss: 1.757417:  40%|████      | 2/5 [00:00<00:00,  4.98it/s]
+Epoch 096 finished in : 2.271 s
+train loss: 1.595540: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Save model at epoch 097, val_loss: 1.5408
+Epoch 097 finished in : 2.328 s
+
+train loss: 1.806268: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 098 finished in : 2.166 s
+	Train RMSE: 1.9028896, Val RMSE: 1.8401559, Pearson R: 0.0698452, Spearman R: 0.6018265
+train loss: 1.619723: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 099 finished in : 2.263 s
+	Train RMSE: 1.5541561, Val RMSE: 1.5696862, Pearson R: 0.1220136, Spearman R: 0.6808542
+train loss: 1.544222: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 100 finished in : 2.175 s
+	Train RMSE: 2.0357455, Val RMSE: 1.9093351, Pearson R: 0.1720250, Spearman R: 0.4863244
+train loss: 1.652104: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+Epoch 101 finished in : 2.171 s
+	Train RMSE: 1.5668524, Val RMSE: 1.6445643, Pearson R: 0.0494446, Spearman R: 0.4741663
+train loss: 1.599069: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+train loss: 1.532520: 100%|██████████| 5/5 [00:01<00:00,  4.55it/s]
+Epoch 102 finished in : 2.275 s
+	Train RMSE: 1.9282595, Val RMSE: 1.8396878, Pearson R: 0.1164445, Spearman R: 0.5714312
+Epoch 103 finished in : 3.659 s
+	Train RMSE: 1.5348049, Val RMSE: 1.5769808, Pearson R: 0.1508492, Spearman R: 0.5410359
+train loss: 1.578573: 100%|██████████| 5/5 [00:01<00:00,  3.63it/s]
+train loss: 1.662321:  80%|████████  | 4/5 [00:00<00:00,  4.86it/s]
+Epoch 104 finished in : 2.521 s
+train loss: 1.648737: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.634135:  60%|██████    | 3/5 [00:00<00:00,  4.62it/s]
+Epoch 105 finished in : 2.266 s
+train loss: 1.670034: 100%|██████████| 5/5 [00:01<00:00,  4.73it/s]
+train loss: 1.963486:  40%|████      | 2/5 [00:00<00:00,  4.91it/s]
+Epoch 106 finished in : 2.209 s
+train loss: 1.573677: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+train loss: 1.643305:  20%|██        | 1/5 [00:00<00:00,  5.07it/s]
+Epoch 107 finished in : 2.266 s
+train loss: 1.561686: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Save model at epoch 108, val_loss: 1.5373
+Epoch 108 finished in : 2.184 s
+
+train loss: 1.558483: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+Epoch 109 finished in : 2.270 s
+	Train RMSE: 1.7705279, Val RMSE: 1.6496401, Pearson R: 0.2395379, Spearman R: 0.6869333
+train loss: 1.533032: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 110 finished in : 2.168 s
+	Train RMSE: 1.5534883, Val RMSE: 1.5716901, Pearson R: 0.1296941, Spearman R: 0.5835893
+train loss: 1.603305: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.541396: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 111 finished in : 2.277 s
+	Train RMSE: 1.7694812, Val RMSE: 1.7560016, Pearson R: 0.1511609, Spearman R: 0.6383008
+train loss: 1.706947: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 112 finished in : 2.174 s
+	Train RMSE: 1.5678260, Val RMSE: 1.5928420, Pearson R: 0.0896079, Spearman R: 0.6018265
+train loss: 1.456143:  80%|████████  | 4/5 [00:00<00:00,  4.75it/s]
+Epoch 113 finished in : 2.272 s
+train loss: 1.511806: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.569244:  60%|██████    | 3/5 [00:00<00:00,  4.64it/s]
+Save model at epoch 114, val_loss: 1.4572
+Epoch 114 finished in : 2.207 s
+train loss: 1.588309: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.414050:  40%|████      | 2/5 [00:00<00:00,  4.90it/s]
+Epoch 115 finished in : 2.278 s
+train loss: 1.620391: 100%|██████████| 5/5 [00:01<00:00,  4.91it/s]
+train loss: 1.789571:  20%|██        | 1/5 [00:00<00:00,  5.04it/s]
+Epoch 116 finished in : 2.172 s
+
+train loss: 1.624475: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.504788:  40%|████      | 2/5 [00:00<00:01,  2.46it/s]
+Epoch 117 finished in : 3.210 s
+train loss: 1.715816: 100%|██████████| 5/5 [00:01<00:00,  2.82it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 118 finished in : 2.922 s
+
+train loss: 1.582086: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+Epoch 119 finished in : 2.280 s
+	Train RMSE: 1.5273003, Val RMSE: 1.5622167, Pearson R: 0.1492326, Spearman R: 0.5227988
+train loss: 1.518819: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 120 finished in : 2.171 s
+	Train RMSE: 1.9859626, Val RMSE: 1.8211063, Pearson R: 0.1533074, Spearman R: 0.6322218
+train loss: 1.601055: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+train loss: 1.592499: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 121 finished in : 2.274 s
+	Train RMSE: 1.5989516, Val RMSE: 1.5575890, Pearson R: 0.1242718, Spearman R: 0.5653522
+train loss: 1.643763: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 122 finished in : 2.175 s
+	Train RMSE: 1.8293165, Val RMSE: 1.8073826, Pearson R: 0.1021654, Spearman R: 0.4498501
+train loss: 1.507623:  80%|████████  | 4/5 [00:00<00:00,  4.70it/s]
+Epoch 123 finished in : 2.272 s
+train loss: 1.612262: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.155634:  60%|██████    | 3/5 [00:00<00:00,  4.81it/s]
+Epoch 124 finished in : 2.172 s
+train loss: 1.598553: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.658624:  40%|████      | 2/5 [00:00<00:00,  4.94it/s]
+Epoch 125 finished in : 2.276 s
+train loss: 1.604232: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.769169:  20%|██        | 1/5 [00:00<00:00,  5.18it/s]
+Epoch 126 finished in : 2.185 s
+train loss: 1.573721: 100%|██████████| 5/5 [00:01<00:00,  4.46it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 127 finished in : 2.269 s
+
+train loss: 1.522031: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+Epoch 128 finished in : 2.177 s
+	Train RMSE: 1.5454614, Val RMSE: 1.5338647, Pearson R: 0.1917503, Spearman R: 0.7294867
+train loss: 1.613261: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s]
+Epoch 129 finished in : 2.273 s
+	Train RMSE: 1.7470936, Val RMSE: 1.7070322, Pearson R: 0.0996457, Spearman R: 0.6200637
+train loss: 1.684886: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.734719: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s]
+Epoch 130 finished in : 2.186 s
+	Train RMSE: 1.7116421, Val RMSE: 1.6622541, Pearson R: 0.1389113, Spearman R: 0.5288778
+train loss: 1.198099:  20%|██        | 1/5 [00:00<00:01,  2.61it/s]
+Epoch 131 finished in : 2.724 s
+
+train loss: 1.646199: 100%|██████████| 5/5 [00:02<00:00,  2.37it/s]
+train loss: 1.795073: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]
+Epoch 132 finished in : 3.452 s
+	Train RMSE: 1.5699335, Val RMSE: 1.5263107, Pearson R: 0.2182433, Spearman R: 0.7173285
+train loss: 1.658637:  80%|████████  | 4/5 [00:00<00:00,  4.83it/s]
+Epoch 133 finished in : 2.275 s
+train loss: 1.660428: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.609338:  60%|██████    | 3/5 [00:00<00:00,  3.96it/s]
+Epoch 134 finished in : 2.176 s
+train loss: 1.589050: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]
+train loss: 1.320902:  40%|████      | 2/5 [00:00<00:00,  4.87it/s]
+Epoch 135 finished in : 2.269 s
+train loss: 1.594837: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.313539:  20%|██        | 1/5 [00:00<00:00,  4.72it/s]
+Epoch 136 finished in : 2.183 s
+train loss: 1.572332: 100%|██████████| 5/5 [00:01<00:00,  4.42it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 137 finished in : 2.282 s
+
+train loss: 1.514504: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 138 finished in : 2.178 s
+	Train RMSE: 1.5916595, Val RMSE: 1.6371366, Pearson R: 0.1066377, Spearman R: 0.5714312
+train loss: 1.550168: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s]
+Epoch 139 finished in : 2.272 s
+	Train RMSE: 1.7979377, Val RMSE: 1.6806231, Pearson R: 0.1809117, Spearman R: 0.5775103
+train loss: 1.578280: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+train loss: 1.605863: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 140 finished in : 2.270 s
+	Train RMSE: 1.6588840, Val RMSE: 1.6503916, Pearson R: 0.0933606, Spearman R: 0.6808542
+train loss: 1.597460: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 141 finished in : 2.177 s
+	Train RMSE: 1.8020930, Val RMSE: 1.7648664, Pearson R: 0.1456573, Spearman R: 0.7659610
+train loss: 1.650260:  80%|████████  | 4/5 [00:00<00:00,  4.56it/s]
+Epoch 142 finished in : 2.176 s
+train loss: 1.612141: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]
+train loss: 1.637335:  60%|██████    | 3/5 [00:00<00:00,  4.64it/s]
+Epoch 143 finished in : 2.275 s
+train loss: 1.540944: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+train loss: 1.587816:  40%|████      | 2/5 [00:00<00:00,  4.63it/s]
+Epoch 144 finished in : 2.274 s
+train loss: 1.606635: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 145 finished in : 2.188 s
+
+train loss: 1.555232: 100%|██████████| 5/5 [00:02<00:00,  2.37it/s]
+train loss: 1.445916:  20%|██        | 1/5 [00:00<00:00,  5.07it/s]
+Epoch 146 finished in : 3.970 s
+train loss: 1.574256: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 147 finished in : 2.175 s
+
+train loss: 1.635767: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+Epoch 148 finished in : 2.270 s
+	Train RMSE: 1.6755292, Val RMSE: 1.6599746, Pearson R: 0.1185895, Spearman R: 0.6990914
+train loss: 1.620768: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+Epoch 149 finished in : 2.172 s
+	Train RMSE: 1.6796710, Val RMSE: 1.6778448, Pearson R: 0.1173631, Spearman R: 0.5288778
+train loss: 1.471824: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.571412: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+Epoch 150 finished in : 2.277 s
+	Train RMSE: 1.5970570, Val RMSE: 1.6082591, Pearson R: 0.1117153, Spearman R: 0.4620082
+train loss: 1.703492: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 151 finished in : 2.180 s
+	Train RMSE: 1.7538478, Val RMSE: 1.6762766, Pearson R: 0.1058635, Spearman R: 0.6869333
+train loss: 1.812858:  80%|████████  | 4/5 [00:00<00:00,  4.83it/s]
+Epoch 152 finished in : 2.270 s
+train loss: 1.720234: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+train loss: 1.704154:  80%|████████  | 4/5 [00:00<00:00,  4.76it/s]
+Epoch 153 finished in : 2.170 s
+train loss: 1.587875: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.729615:  40%|████      | 2/5 [00:00<00:00,  4.98it/s]
+Epoch 154 finished in : 2.270 s
+train loss: 1.548266: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.784462:  20%|██        | 1/5 [00:00<00:00,  4.64it/s]
+Epoch 155 finished in : 2.177 s
+train loss: 1.692794: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 156 finished in : 2.283 s
+
+train loss: 1.576179: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+Epoch 157 finished in : 2.176 s
+	Train RMSE: 1.5084338, Val RMSE: 1.4978890, Pearson R: 0.2197861, Spearman R: 0.5835893
+train loss: 1.582438: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 158 finished in : 2.280 s
+	Train RMSE: 1.9274471, Val RMSE: 1.8120117, Pearson R: 0.1809494, Spearman R: 0.6869333
+train loss: 1.564624: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.614341:  80%|████████  | 4/5 [00:01<00:00,  2.83it/s]
+Epoch 159 finished in : 2.176 s
+
+train loss: 1.661098: 100%|██████████| 5/5 [00:01<00:00,  3.01it/s]
+train loss: 1.726557: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 160 finished in : 3.970 s
+	Train RMSE: 1.7807802, Val RMSE: 1.6909156, Pearson R: 0.1300101, Spearman R: 0.6686961
+train loss: 1.521524: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+Epoch 161 finished in : 2.175 s
+	Train RMSE: 1.8029159, Val RMSE: 1.7775820, Pearson R: 0.1068048, Spearman R: 0.4255339
+train loss: 1.563560: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 162 finished in : 2.273 s
+	Train RMSE: 1.6112920, Val RMSE: 1.5672383, Pearson R: 0.1363284, Spearman R: 0.5835893
+train loss: 1.640495:  80%|████████  | 4/5 [00:00<00:00,  4.92it/s]
+Epoch 163 finished in : 2.176 s
+train loss: 1.659115: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 1.795130:  60%|██████    | 3/5 [00:00<00:00,  4.88it/s]
+Epoch 164 finished in : 2.275 s
+train loss: 1.642309: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.737161:  40%|████      | 2/5 [00:00<00:00,  4.76it/s]
+Epoch 165 finished in : 2.172 s
+train loss: 1.514381: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 166 finished in : 2.279 s
+train loss: 1.575935: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 167 finished in : 2.172 s
+
+train loss: 1.581201: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+Epoch 168 finished in : 2.282 s
+	Train RMSE: 1.7399896, Val RMSE: 1.6973800, Pearson R: 0.0949798, Spearman R: 0.5410359
+train loss: 1.548037: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 1.633053: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 169 finished in : 2.196 s
+	Train RMSE: 1.6854545, Val RMSE: 1.6178886, Pearson R: 0.1877990, Spearman R: 0.7416448
+train loss: 1.714535: 100%|██████████| 5/5 [00:01<00:00,  4.40it/s]
+Epoch 170 finished in : 2.202 s
+	Train RMSE: 1.8123417, Val RMSE: 1.7045555, Pearson R: 0.1676544, Spearman R: 0.6322218
+train loss: 1.618553: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+Epoch 171 finished in : 2.294 s
+	Train RMSE: 1.6395159, Val RMSE: 1.5418570, Pearson R: 0.2280739, Spearman R: 0.7112495
+train loss: 1.717043:  60%|██████    | 3/5 [00:00<00:00,  4.83it/s]
+Epoch 172 finished in : 2.296 s
+train loss: 1.646916: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+train loss: 1.563279:  40%|████      | 2/5 [00:00<00:00,  4.77it/s]
+Epoch 173 finished in : 2.192 s
+
+train loss: 1.566769: 100%|██████████| 5/5 [00:01<00:00,  3.71it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 174 finished in : 3.729 s
+
+train loss: 1.653308: 100%|██████████| 5/5 [00:01<00:00,  3.82it/s]
+Epoch 175 finished in : 2.456 s
+	Train RMSE: 1.6892775, Val RMSE: 1.5584087, Pearson R: 0.2146082, Spearman R: 0.6200637
+train loss: 1.572262: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+Epoch 176 finished in : 2.196 s
+	Train RMSE: 1.6837516, Val RMSE: 1.6734839, Pearson R: 0.1254075, Spearman R: 0.6930123
+train loss: 1.541831: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+Epoch 177 finished in : 2.279 s
+	Train RMSE: 1.7614376, Val RMSE: 1.6915036, Pearson R: 0.1469797, Spearman R: 0.6686961
+train loss: 1.531718: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 178 finished in : 2.187 s
+	Train RMSE: 1.6315422, Val RMSE: 1.6104783, Pearson R: 0.1282151, Spearman R: 0.6990914
+train loss: 1.476131: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]
+train loss: 1.517454:  80%|████████  | 4/5 [00:00<00:00,  4.90it/s]
+Epoch 179 finished in : 2.284 s
+train loss: 1.529324: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.515336:  60%|██████    | 3/5 [00:00<00:00,  4.37it/s]
+Epoch 180 finished in : 2.185 s
+train loss: 1.554741: 100%|██████████| 5/5 [00:01<00:00,  4.42it/s]
+train loss: 1.495833:  40%|████      | 2/5 [00:00<00:00,  4.81it/s]
+Epoch 181 finished in : 2.281 s
+train loss: 1.539111: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 182 finished in : 2.182 s
+train loss: 1.532277: 100%|██████████| 5/5 [00:01<00:00,  4.41it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 183 finished in : 2.281 s
+
+train loss: 1.448749: 100%|██████████| 5/5 [00:01<00:00,  4.79it/s]
+Epoch 184 finished in : 2.191 s
+	Train RMSE: 1.7487607, Val RMSE: 1.6566723, Pearson R: 0.1711787, Spearman R: 0.5592731
+train loss: 1.498777: 100%|██████████| 5/5 [00:01<00:00,  4.42it/s]
+Epoch 185 finished in : 2.277 s
+	Train RMSE: 1.6584961, Val RMSE: 1.5995394, Pearson R: 0.1632504, Spearman R: 0.4863244
+train loss: 1.512852: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+Epoch 186 finished in : 2.174 s
+	Train RMSE: 1.5607152, Val RMSE: 1.5474519, Pearson R: 0.1813867, Spearman R: 0.5835893
+train loss: 1.617135: 100%|██████████| 5/5 [00:01<00:00,  4.46it/s]
+train loss: 1.804735: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 187 finished in : 2.270 s
+	Train RMSE: 1.9258112, Val RMSE: 1.8307547, Pearson R: 0.1752121, Spearman R: 0.7294867
+Epoch 188 finished in : 3.336 s
+	Train RMSE: 1.7524809, Val RMSE: 1.7029298, Pearson R: 0.1480604, Spearman R: 0.6869333
+train loss: 1.826134: 100%|██████████| 5/5 [00:01<00:00,  2.93it/s]
+train loss: 1.727023:  80%|████████  | 4/5 [00:00<00:00,  4.93it/s]
+Epoch 189 finished in : 2.859 s
+train loss: 1.688541: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 1.686760:  60%|██████    | 3/5 [00:00<00:00,  4.93it/s]
+Epoch 190 finished in : 2.271 s
+train loss: 1.673666: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.956959:  40%|████      | 2/5 [00:00<00:00,  4.73it/s]
+Epoch 191 finished in : 2.171 s
+train loss: 1.682119: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 192 finished in : 2.272 s
+train loss: 1.637316: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 193 finished in : 2.176 s
+
+train loss: 1.605219: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+Epoch 194 finished in : 2.272 s
+	Train RMSE: 1.5763496, Val RMSE: 1.6072883, Pearson R: 0.1212588, Spearman R: 0.8085144
+train loss: 1.558421: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 195 finished in : 2.183 s
+	Train RMSE: 1.8640309, Val RMSE: 1.7662333, Pearson R: 0.1911080, Spearman R: 0.7902772
+train loss: 1.580944: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+Epoch 196 finished in : 2.272 s
+	Train RMSE: 1.5397671, Val RMSE: 1.5751904, Pearson R: 0.1477354, Spearman R: 0.5957474
+train loss: 1.593812: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.643214: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 197 finished in : 2.175 s
+	Train RMSE: 1.7435555, Val RMSE: 1.6697209, Pearson R: 0.1740860, Spearman R: 0.5957474
+train loss: 1.487456:  80%|████████  | 4/5 [00:00<00:00,  4.91it/s]
+Epoch 198 finished in : 2.269 s
+train loss: 1.542618: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 1.498978:  60%|██████    | 3/5 [00:00<00:00,  4.97it/s]
+Epoch 199 finished in : 2.173 s
+train loss: 1.491640: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 1.565009:  20%|██        | 1/5 [00:00<00:00,  4.62it/s]
+Epoch 200 finished in : 2.276 s
+train loss: 1.471453: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.519607:  20%|██        | 1/5 [00:00<00:00,  4.75it/s]
+Epoch 201 finished in : 2.172 s
+
+train loss: 1.680079: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 202 finished in : 3.016 s
+	Train RMSE: 1.6173885, Val RMSE: 1.6091935, Pearson R: 0.0927188, Spearman R: 0.4984825
+
+train loss: 1.600496: 100%|██████████| 5/5 [00:02<00:00,  2.39it/s]
+Epoch 203 finished in : 3.229 s
+	Train RMSE: 1.7515709, Val RMSE: 1.6130505, Pearson R: 0.2226524, Spearman R: 0.5957474
+train loss: 1.608406: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+Epoch 204 finished in : 2.265 s
+	Train RMSE: 1.6968582, Val RMSE: 1.6171139, Pearson R: 0.1510221, Spearman R: 0.6686961
+train loss: 1.597598: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 205 finished in : 2.183 s
+	Train RMSE: 1.6567785, Val RMSE: 1.6346462, Pearson R: 0.0634496, Spearman R: 0.6200637
+train loss: 1.496934: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 206 finished in : 2.280 s
+	Train RMSE: 1.7574839, Val RMSE: 1.7085727, Pearson R: 0.0682253, Spearman R: 0.4620082
+train loss: 1.546838: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.537434: 100%|██████████| 5/5 [00:01<00:00,  4.91it/s]
+Epoch 207 finished in : 2.180 s
+	Train RMSE: 1.5644662, Val RMSE: 1.5606601, Pearson R: 0.1563621, Spearman R: 0.5531940
+train loss: 1.573055:  80%|████████  | 4/5 [00:00<00:00,  4.88it/s]
+Epoch 208 finished in : 2.270 s
+train loss: 1.592413: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+train loss: 1.384653:  60%|██████    | 3/5 [00:00<00:00,  5.02it/s]
+Epoch 209 finished in : 2.174 s
+train loss: 1.515631: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.258106:  20%|██        | 1/5 [00:00<00:00,  4.79it/s]
+Epoch 210 finished in : 2.268 s
+train loss: 1.532801: 100%|██████████| 5/5 [00:01<00:00,  4.85it/s]
+train loss: 1.739661:  20%|██        | 1/5 [00:00<00:00,  4.95it/s]
+Epoch 211 finished in : 2.175 s
+
+train loss: 1.511376: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 212 finished in : 2.271 s
+	Train RMSE: 1.6933928, Val RMSE: 1.6410800, Pearson R: 0.1546664, Spearman R: 0.6322218
+train loss: 1.625756: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 213 finished in : 2.171 s
+	Train RMSE: 1.6463694, Val RMSE: 1.6120449, Pearson R: 0.1824803, Spearman R: 0.7659610
+train loss: 1.533275: 100%|██████████| 5/5 [00:01<00:00,  4.42it/s]
+Epoch 214 finished in : 2.278 s
+	Train RMSE: 1.6378545, Val RMSE: 1.5928883, Pearson R: 0.1789857, Spearman R: 0.6747752
+train loss: 1.643790: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 215 finished in : 2.184 s
+	Train RMSE: 1.6980868, Val RMSE: 1.6519221, Pearson R: 0.1508619, Spearman R: 0.6200637
+train loss: 1.575435: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s]
+train loss: 1.299013:  40%|████      | 2/5 [00:00<00:01,  2.36it/s]
+Epoch 216 finished in : 2.422 s
+
+train loss: 1.515558: 100%|██████████| 5/5 [00:02<00:00,  2.36it/s]
+train loss: 1.585043: 100%|██████████| 5/5 [00:01<00:00,  4.47it/s]
+Epoch 217 finished in : 3.725 s
+	Train RMSE: 1.6230088, Val RMSE: 1.5965870, Pearson R: 0.1569283, Spearman R: 0.8024353
+train loss: 1.494117:  80%|████████  | 4/5 [00:00<00:00,  4.87it/s]
+Epoch 218 finished in : 2.272 s
+train loss: 1.507395: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+train loss: 1.524057:  60%|██████    | 3/5 [00:00<00:00,  4.80it/s]
+Epoch 219 finished in : 2.178 s
+train loss: 1.542198: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]
+train loss: 1.313163:  40%|████      | 2/5 [00:00<00:00,  4.86it/s]
+Epoch 220 finished in : 2.272 s
+train loss: 1.482810: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 1.269007:  20%|██        | 1/5 [00:00<00:00,  5.30it/s]
+Epoch 221 finished in : 2.177 s
+
+train loss: 1.628029: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+Epoch 222 finished in : 2.271 s
+	Train RMSE: 1.6542152, Val RMSE: 1.6391104, Pearson R: 0.1136605, Spearman R: 0.6565380
+train loss: 1.652433: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+Epoch 223 finished in : 2.178 s
+	Train RMSE: 1.6671188, Val RMSE: 1.6303563, Pearson R: 0.1184692, Spearman R: 0.5227988
+train loss: 1.675529: 100%|██████████| 5/5 [00:01<00:00,  4.42it/s]
+Epoch 224 finished in : 2.279 s
+	Train RMSE: 1.8907256, Val RMSE: 1.7659936, Pearson R: 0.1849245, Spearman R: 0.7051704
+train loss: 1.633272: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+Epoch 225 finished in : 2.175 s
+	Train RMSE: 1.4993799, Val RMSE: 1.5611039, Pearson R: 0.1038586, Spearman R: 0.6079055
+train loss: 1.639421: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.717137: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+Epoch 226 finished in : 2.276 s
+	Train RMSE: 2.0874367, Val RMSE: 1.9575841, Pearson R: 0.1091715, Spearman R: 0.5714312
+train loss: 1.713448:  60%|██████    | 3/5 [00:00<00:00,  3.96it/s]
+Epoch 227 finished in : 2.178 s
+train loss: 1.584002: 100%|██████████| 5/5 [00:01<00:00,  4.45it/s]
+train loss: 1.513801:  60%|██████    | 3/5 [00:00<00:00,  4.99it/s]
+Epoch 228 finished in : 2.279 s
+train loss: 1.549010: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 1.706353:  40%|████      | 2/5 [00:00<00:00,  4.76it/s]
+Epoch 229 finished in : 2.176 s
+train loss: 1.502384: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 230 finished in : 2.286 s
+
+train loss: 1.539259: 100%|██████████| 5/5 [00:01<00:00,  2.69it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 231 finished in : 3.974 s
+
+train loss: 1.604675: 100%|██████████| 5/5 [00:01<00:00,  4.81it/s]
+Epoch 232 finished in : 2.277 s
+	Train RMSE: 1.6088538, Val RMSE: 1.5714422, Pearson R: 0.1902791, Spearman R: 0.6443799
+train loss: 1.653254: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+Epoch 233 finished in : 2.181 s
+	Train RMSE: 1.8610888, Val RMSE: 1.6886866, Pearson R: 0.1731788, Spearman R: 0.5714312
+train loss: 1.577726: 100%|██████████| 5/5 [00:01<00:00,  4.41it/s]
+Epoch 234 finished in : 2.285 s
+	Train RMSE: 1.5573021, Val RMSE: 1.5262056, Pearson R: 0.1759456, Spearman R: 0.5045616
+train loss: 1.604235: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+Epoch 235 finished in : 2.177 s
+	Train RMSE: 1.8286752, Val RMSE: 1.7348994, Pearson R: 0.1494561, Spearman R: 0.5288778
+train loss: 1.647016: 100%|██████████| 5/5 [00:01<00:00,  4.46it/s]
+train loss: 1.585422:  80%|████████  | 4/5 [00:00<00:00,  4.85it/s]
+Epoch 236 finished in : 2.277 s
+train loss: 1.602238: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.685363:  60%|██████    | 3/5 [00:00<00:00,  4.95it/s]
+Epoch 237 finished in : 2.281 s
+train loss: 1.556232: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+train loss: 1.797798:  40%|████      | 2/5 [00:00<00:00,  4.89it/s]
+Epoch 238 finished in : 2.183 s
+train loss: 1.581862: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 1.629446:  20%|██        | 1/5 [00:00<00:00,  4.75it/s]
+Epoch 239 finished in : 2.282 s
+train loss: 1.538985: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 240 finished in : 2.187 s
+
+train loss: 1.522568: 100%|██████████| 5/5 [00:01<00:00,  4.80it/s]
+Epoch 241 finished in : 2.282 s
+	Train RMSE: 1.7155569, Val RMSE: 1.5816705, Pearson R: 0.1530226, Spearman R: 0.8085144
+train loss: 1.544656: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+Epoch 242 finished in : 2.181 s
+	Train RMSE: 1.6434311, Val RMSE: 1.5913762, Pearson R: 0.1439638, Spearman R: 0.5471150
+train loss: 1.468193: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+Epoch 243 finished in : 2.288 s
+	Train RMSE: 1.7152895, Val RMSE: 1.6508528, Pearson R: 0.1764855, Spearman R: 0.4984825
+train loss: 1.595364: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.347144:  80%|████████  | 4/5 [00:01<00:00,  3.58it/s]
+Epoch 244 finished in : 2.179 s
+
+train loss: 1.500551: 100%|██████████| 5/5 [00:01<00:00,  3.48it/s]
+Epoch 245 finished in : 3.723 s
+	Train RMSE: 1.7749708, Val RMSE: 1.6748618, Pearson R: 0.1918096, Spearman R: 0.7659610
+train loss: 1.464332: 100%|██████████| 5/5 [00:01<00:00,  3.80it/s]
+train loss: 1.579172:  80%|████████  | 4/5 [00:00<00:00,  4.98it/s]
+Epoch 246 finished in : 2.472 s
+train loss: 1.630322: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 1.679566:  60%|██████    | 3/5 [00:00<00:00,  4.87it/s]
+Epoch 247 finished in : 2.276 s
+train loss: 1.624033: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 1.497017:  40%|████      | 2/5 [00:00<00:00,  5.02it/s]
+Epoch 248 finished in : 2.177 s
+train loss: 1.528947: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 249 finished in : 2.182 s
+train loss: 1.647845: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 250 finished in : 2.271 s
+
+train loss: 1.646961: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+Epoch 251 finished in : 2.178 s
+	Train RMSE: 1.8905444, Val RMSE: 1.7850701, Pearson R: 0.2158193, Spearman R: 0.7781191
+train loss: 1.666007: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+Epoch 252 finished in : 2.272 s
+	Train RMSE: 1.5169800, Val RMSE: 1.5304668, Pearson R: 0.1653267, Spearman R: 0.6808542
+train loss: 1.610340: 100%|██████████| 5/5 [00:01<00:00,  4.81it/s]
+Epoch 253 finished in : 2.191 s
+	Train RMSE: 1.9696842, Val RMSE: 1.8724250, Pearson R: 0.0713239, Spearman R: 0.5288778
+train loss: 1.581043: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]
+train loss: 1.639541: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+Epoch 254 finished in : 2.277 s
+	Train RMSE: 1.5181375, Val RMSE: 1.4978384, Pearson R: 0.2117727, Spearman R: 0.7416448
+train loss: 1.582272:  80%|████████  | 4/5 [00:00<00:00,  4.53it/s]
+Epoch 255 finished in : 2.178 s
+train loss: 1.591784: 100%|██████████| 5/5 [00:01<00:00,  4.47it/s]
+train loss: 1.597923:  60%|██████    | 3/5 [00:00<00:00,  4.73it/s]
+Epoch 256 finished in : 2.270 s
+train loss: 1.588393: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 1.425870:  40%|████      | 2/5 [00:00<00:00,  5.13it/s]
+Epoch 257 finished in : 2.176 s
+train loss: 1.542273: 100%|██████████| 5/5 [00:01<00:00,  4.40it/s]
+train loss: 1.349572:  20%|██        | 1/5 [00:00<00:00,  4.72it/s]
+Epoch 258 finished in : 2.283 s
+
+train loss: 1.532283: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+train loss: 1.600491:  40%|████      | 2/5 [00:00<00:01,  2.38it/s]
+Epoch 259 finished in : 3.252 s
+train loss: 1.484886: 100%|██████████| 5/5 [00:01<00:00,  2.77it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 260 finished in : 2.949 s
+
+train loss: 1.593300: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+Epoch 261 finished in : 2.181 s
+	Train RMSE: 1.6845213, Val RMSE: 1.6053303, Pearson R: 0.2246971, Spearman R: 0.8024353
+train loss: 1.510881: 100%|██████████| 5/5 [00:01<00:00,  4.41it/s]
+Epoch 262 finished in : 2.274 s
+	Train RMSE: 1.7955182, Val RMSE: 1.7397320, Pearson R: 0.1176875, Spearman R: 0.6686961
+train loss: 1.540980: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+Epoch 263 finished in : 2.186 s
+	Train RMSE: 1.5697075, Val RMSE: 1.5043028, Pearson R: 0.2015503, Spearman R: 0.5471150
+train loss: 1.552293: 100%|██████████| 5/5 [00:01<00:00,  4.46it/s]
+train loss: 1.464116: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+Epoch 264 finished in : 2.274 s
+	Train RMSE: 1.7336851, Val RMSE: 1.6770385, Pearson R: 0.0992110, Spearman R: 0.5106407
+train loss: 1.615236:  80%|████████  | 4/5 [00:00<00:00,  4.59it/s]
+Epoch 265 finished in : 2.182 s
+train loss: 1.597423: 100%|██████████| 5/5 [00:01<00:00,  4.46it/s]
+train loss: 1.582544:  60%|██████    | 3/5 [00:00<00:00,  4.83it/s]
+Epoch 266 finished in : 2.276 s
+train loss: 1.484671: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+train loss: 1.444432:  40%|████      | 2/5 [00:00<00:00,  5.09it/s]
+Epoch 267 finished in : 2.181 s
+train loss: 1.698960: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+train loss: 1.412827:  20%|██        | 1/5 [00:00<00:00,  4.61it/s]
+Epoch 268 finished in : 2.276 s
+train loss: 1.509270: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 269 finished in : 2.181 s
+
+train loss: 1.505363: 100%|██████████| 5/5 [00:01<00:00,  4.41it/s]
+Epoch 270 finished in : 2.282 s
+	Train RMSE: 1.7293436, Val RMSE: 1.6367024, Pearson R: 0.1616820, Spearman R: 0.6990914
+train loss: 1.561962: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+Epoch 271 finished in : 2.179 s
+	Train RMSE: 1.7089202, Val RMSE: 1.5329766, Pearson R: 0.2749639, Spearman R: 0.6808542
+train loss: 1.558804: 100%|██████████| 5/5 [00:01<00:00,  4.42it/s]
+train loss: 1.632824: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+Epoch 272 finished in : 2.291 s
+	Train RMSE: 1.6924993, Val RMSE: 1.5871841, Pearson R: 0.1433684, Spearman R: 0.5714312
+train loss: 1.714141:  20%|██        | 1/5 [00:00<00:01,  2.28it/s]
+Epoch 273 finished in : 2.715 s
+
+train loss: 1.636672: 100%|██████████| 5/5 [00:02<00:00,  2.38it/s]
+train loss: 1.546611: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+Epoch 274 finished in : 3.452 s
+	Train RMSE: 1.7029689, Val RMSE: 1.6526427, Pearson R: 0.1733484, Spearman R: 0.5531940
+train loss: 1.612665:  80%|████████  | 4/5 [00:00<00:00,  4.99it/s]
+Epoch 275 finished in : 2.278 s
+train loss: 1.622542: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+train loss: 1.435441:  60%|██████    | 3/5 [00:00<00:00,  4.82it/s]
+Epoch 276 finished in : 2.175 s
+train loss: 1.540554: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+train loss: 1.705009:  40%|████      | 2/5 [00:00<00:00,  3.94it/s]
+Epoch 277 finished in : 2.192 s
+train loss: 1.630558: 100%|██████████| 5/5 [00:01<00:00,  4.44it/s]
+train loss: 1.858660:  20%|██        | 1/5 [00:00<00:00,  4.59it/s]
+Epoch 278 finished in : 2.271 s
+train loss: 1.662406: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 279 finished in : 2.174 s
+
+train loss: 1.502082: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+Epoch 280 finished in : 2.270 s
+	Train RMSE: 1.5425707, Val RMSE: 1.5426896, Pearson R: 0.1083511, Spearman R: 0.6079055
+train loss: 1.719901: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 281 finished in : 2.176 s
+	Train RMSE: 1.8284271, Val RMSE: 1.7036043, Pearson R: 0.1360541, Spearman R: 0.6747752
+train loss: 1.531328: 100%|██████████| 5/5 [00:01<00:00,  4.43it/s]
+train loss: 1.574027: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+Epoch 282 finished in : 2.280 s
+	Train RMSE: 1.6516113, Val RMSE: 1.5692277, Pearson R: 0.2066354, Spearman R: 0.7294867
+train loss: 1.600243: 100%|██████████| 5/5 [00:01<00:00,  4.47it/s]
+Epoch 283 finished in : 2.187 s
+	Train RMSE: 1.6826094, Val RMSE: 1.7038675, Pearson R: 0.0057757, Spearman R: 0.4072967
+train loss: 1.568665:  60%|██████    | 3/5 [00:00<00:00,  4.92it/s]
+Epoch 284 finished in : 2.272 s
+train loss: 1.494248: 100%|██████████| 5/5 [00:01<00:00,  4.88it/s]
+train loss: 1.640055:  60%|██████    | 3/5 [00:00<00:00,  4.89it/s]
+Epoch 285 finished in : 2.273 s
+train loss: 1.604536: 100%|██████████| 5/5 [00:01<00:00,  4.90it/s]
+train loss: 1.585489:  40%|████      | 2/5 [00:00<00:00,  5.02it/s]
+Epoch 286 finished in : 2.171 s
+train loss: 1.460818: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 287 finished in : 2.271 s
+
+train loss: 1.494025: 100%|██████████| 5/5 [00:02<00:00,  2.39it/s]
+train loss: 1.924532:  20%|██        | 1/5 [00:00<00:00,  5.11it/s]
+Epoch 288 finished in : 3.935 s
+
+train loss: 1.560741: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 289 finished in : 2.268 s
+	Train RMSE: 1.7694773, Val RMSE: 1.6322392, Pearson R: 0.2003191, Spearman R: 0.5896684
+train loss: 1.676611: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 290 finished in : 2.174 s
+	Train RMSE: 1.6439373, Val RMSE: 1.5979754, Pearson R: 0.1421268, Spearman R: 0.4924035
+train loss: 1.591379: 100%|██████████| 5/5 [00:01<00:00,  4.80it/s]
+Epoch 291 finished in : 2.282 s
+	Train RMSE: 1.6000758, Val RMSE: 1.5823594, Pearson R: 0.1291712, Spearman R: 0.6990914
+train loss: 1.472112: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+train loss: 1.598080: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 292 finished in : 2.182 s
+	Train RMSE: 1.7297513, Val RMSE: 1.6136516, Pearson R: 0.2006886, Spearman R: 0.6079055
+train loss: 1.543790: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+Epoch 293 finished in : 2.274 s
+	Train RMSE: 1.6598556, Val RMSE: 1.6060096, Pearson R: 0.1578445, Spearman R: 0.6808542
+train loss: 1.615446:  80%|████████  | 4/5 [00:00<00:00,  4.92it/s]
+Epoch 294 finished in : 2.175 s
+train loss: 1.627774: 100%|██████████| 5/5 [00:01<00:00,  4.89it/s]
+train loss: 1.572426:  60%|██████    | 3/5 [00:00<00:00,  5.00it/s]
+Epoch 295 finished in : 2.273 s
+train loss: 1.590944: 100%|██████████| 5/5 [00:01<00:00,  4.86it/s]
+train loss: 1.469068:  40%|████      | 2/5 [00:00<00:00,  4.92it/s]
+Epoch 296 finished in : 2.182 s
+train loss: 1.542121: 100%|██████████| 5/5 [00:01<00:00,  4.87it/s]
+train loss: 0.000000:   0%|          | 0/5 [00:00<?, ?it/s]
+Epoch 297 finished in : 2.273 s
+
+train loss: 1.702609: 100%|██████████| 5/5 [00:01<00:00,  4.81it/s]
+Epoch 298 finished in : 2.180 s
+	Train RMSE: 1.8457641, Val RMSE: 1.7511520, Pearson R: 0.1347284, Spearman R: 0.5957474
+train loss: 1.621840: 100%|██████████| 5/5 [00:01<00:00,  4.83it/s]
+Epoch 299 finished in : 2.273 s
+	Train RMSE: 1.5369140, Val RMSE: 1.5500296, Pearson R: 0.1469193, Spearman R: 0.6686961
+train loss: 1.591382: 100%|██████████| 5/5 [00:01<00:00,  4.84it/s]
+Epoch 300 finished in : 2.173 s
+	Train RMSE: 1.8191426, Val RMSE: 1.7461034, Pearson R: 0.1527378, Spearman R: 0.7538029
+Running repetition 2/3
+Training model for rep2 with config:
+{
+    "data_dir": "pdbbind_output_mdb/split/data",
+    "mode": "test",
+    "output_dir": "output_train/rep_2",
+    "unobserved": false,
+    "learning_rate": 0.0001,
+    "conv_drop_rate": 0.1,
+    "fc_drop_rate": 0.25,
+    "num_epochs": 300,
+    "num_conv": 4,
+    "batch_norm": false,
+    "no_dropout": false,
+    "batch_size": 16,
+    "random_seed": 9845977
+}

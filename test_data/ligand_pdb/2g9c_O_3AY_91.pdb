@@ -1,0 +1,11 @@
+REMARK Selection '(segment O and ... (resname HOH))'
+HETATM    1  NAA 3AY A  91      10.906  13.120   6.211  1.00 20.70         O N  
+HETATM    2  C6  3AY A  91      11.208  12.450   7.317  1.00 19.96         O C  
+HETATM    3  C5  3AY A  91      11.628  11.128   7.236  1.00 20.40         O C  
+HETATM    4  N1  3AY A  91      11.153  13.062   8.511  1.00 19.44         O N  
+HETATM    5  C2  3AY A  91      11.504  12.428   9.640  1.00 20.27         O C  
+HETATM    6  NAH 3AY A  91      11.515  13.087  10.798  1.00 20.22         O N  
+HETATM    7  N3  3AY A  91      11.910  11.150   9.594  1.00 20.06         O N  
+HETATM    8  C4  3AY A  91      11.980  10.495   8.424  1.00 20.58         O C  
+HETATM    9  NAI 3AY A  91      12.394   9.232   8.400  1.00 19.30         O N  
+END   

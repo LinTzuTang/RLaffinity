@@ -1,0 +1,13 @@
+REMARK Selection '(segment B and ... (resname HOH))'
+HETATM    1  F   A2F A  91     -11.661 -11.789  10.626  1.00 35.98         B F  
+HETATM    2  C2  A2F A  91     -11.647 -11.140   9.446  1.00 36.07         B C  
+HETATM    3  N3  A2F A  91     -11.218 -11.795   8.356  1.00 35.26         B N  
+HETATM    4  N1  A2F A  91     -12.060  -9.865   9.375  1.00 34.52         B N  
+HETATM    5  C6  A2F A  91     -12.054  -9.212   8.203  1.00 34.11         B C  
+HETATM    6  N6  A2F A  91     -12.392  -7.927   8.148  1.00 31.63         B N  
+HETATM    7  C5  A2F A  91     -11.626  -9.872   7.057  1.00 34.33         B C  
+HETATM    8  C4  A2F A  91     -11.199 -11.188   7.163  1.00 34.93         B C  
+HETATM    9  N7  A2F A  91     -11.502  -9.521   5.780  1.00 34.42         B N  
+HETATM   10  C8  A2F A  91     -11.013 -10.561   5.109  1.00 34.57         B C  
+HETATM   11  N9  A2F A  91     -10.826 -11.579   5.948  1.00 34.76         B N  
+END   

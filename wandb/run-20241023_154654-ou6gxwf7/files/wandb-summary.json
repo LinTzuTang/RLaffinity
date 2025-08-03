@@ -1,0 +1,1 @@
+{"Epoch": 2, "Train RMSE": 1.6864646651641564, "Train Pearson R": 0.23524980432762072, "Train Spearman R": 0.29127863787238, "Val RMSE": 1.598385045567816, "Val Pearson R": 0.25568754037523245, "Val Spearman R": 0.6930123197952737, "Time": 13.182360887527466, "_timestamp": 1729712846.8554335, "_runtime": 27.352566480636597, "_step": 1, "_wandb": {"runtime": 27}}

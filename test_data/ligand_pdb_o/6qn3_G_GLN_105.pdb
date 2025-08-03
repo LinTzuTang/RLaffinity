@@ -1,0 +1,13 @@
+REMARK Selection '(segment G and ... (resname HOH))'
+HETATM    1  N   GLN A 105     -20.317 -35.774 -47.507  1.00 66.76         G N  
+HETATM    2  CA  GLN A 105     -18.889 -36.034 -47.486  1.00 68.31         G C  
+HETATM    3  C   GLN A 105     -18.199 -35.414 -48.731  1.00 76.99         G C  
+HETATM    4  O   GLN A 105     -18.775 -34.592 -49.464  1.00 69.84         G O  
+HETATM    5  CB  GLN A 105     -18.614 -37.542 -47.409  1.00 68.03         G C  
+HETATM    6  CG  GLN A 105     -17.144 -37.884 -47.139  1.00 69.65         G C  
+HETATM    7  CD  GLN A 105     -16.839 -39.367 -47.178  1.00 69.61         G C  
+HETATM    8  OE1 GLN A 105     -17.701 -40.185 -47.455  1.00 68.39         G O  
+HETATM    9  NE2 GLN A 105     -15.591 -39.716 -46.925  1.00 71.09         G N  
+HETATM   10  OXT GLN A 105     -17.031 -35.691 -49.027  1.00 71.34         G O  
+TER      11      GLN A 105                                                      
+END   

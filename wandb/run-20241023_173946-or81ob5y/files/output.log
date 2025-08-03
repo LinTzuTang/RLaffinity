@@ -1,0 +1,62 @@
+/blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/train_model_pdbbind.py:137: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  pre_model.load_state_dict(torch.load('pth/model_stage1_epoch20.pth'), strict=False)
+CNN3D_LBA(
+  (model): Sequential(
+    (0): Conv3d(32, 32, kernel_size=(3, 3, 3), stride=(1, 1, 1))
+    (1): LayerNorm((32, 23, 23, 23), eps=1e-05, elementwise_affine=True)
+    (2): ReLU()
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Conv3d(32, 64, kernel_size=(3, 3, 3), stride=(1, 1, 1))
+    (5): LayerNorm((64, 21, 21, 21), eps=1e-05, elementwise_affine=True)
+    (6): ReLU()
+    (7): MaxPool3d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (8): Dropout(p=0.1, inplace=False)
+    (9): Conv3d(64, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1))
+    (10): LayerNorm((128, 9, 9, 9), eps=1e-05, elementwise_affine=True)
+    (11): ReLU()
+    (12): Dropout(p=0.1, inplace=False)
+    (13): Conv3d(128, 256, kernel_size=(3, 3, 3), stride=(1, 1, 1))
+    (14): LayerNorm((256, 7, 7, 7), eps=1e-05, elementwise_affine=True)
+    (15): ReLU()
+    (16): MaxPool3d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (17): Dropout(p=0.1, inplace=False)
+    (18): Flatten(start_dim=1, end_dim=-1)
+    (19): Linear(in_features=2048, out_features=512, bias=True)
+    (20): ReLU()
+    (21): Dropout(p=0.25, inplace=False)
+    (22): Linear(in_features=512, out_features=1, bias=True)
+  )
+)
+train loss: 0.000000:   0%|          | 0/5 [00:19<?, ?it/s]
+Traceback (most recent call last):
+  File "/blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/train_model_pdbbind.py", line 273, in <module>
+    main()
+  File "/blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/train_model_pdbbind.py", line 269, in main
+    run_multiple_reps(args_dict, device, num_reps=3)
+  File "/blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/train_model_pdbbind.py", line 234, in run_multiple_reps
+    best_val_loss, best_rp, best_rs = train(args_dict, device, rep_name, test_mode=False)
+  File "/blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/train_model_pdbbind.py", line 165, in train
+    train_loss = train_loop(pre_model, model, train_loader, optimizer, device)
+  File "/blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/train_model_pdbbind.py", line 62, in train_loop
+    output = model(new_feature)
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/model.py", line 59, in forward
+    return self.model(x).view(-1)
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/site-packages/torch/nn/modules/normalization.py", line 202, in forward
+    return F.layer_norm(
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/site-packages/torch/nn/functional.py", line 2576, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: Given normalized_shape=[32, 23, 23, 23], expected input with shape [*, 32, 23, 23, 23], but got input of size[16, 32, 19, 19, 19]

@@ -1,0 +1,26 @@
+REMARK Selection '(segment C and ... (resname HOH))'
+HETATM    1  C1  PXA C   6       3.110  23.480  10.908  1.00 19.18         C C  
+HETATM    2  C0  PXA C   6       3.145  22.068  10.722  1.00 29.27         C C  
+HETATM    3  O1  PXA C   6       2.091  21.438  10.818  1.00 43.62         C O  
+HETATM    4  C2  PXA C   6       2.872  24.319   9.798  1.00 20.52         C C  
+HETATM    5  N2  PXA C   6       2.694  23.793   8.592  1.00 31.34         C N  
+HETATM    6  C3  PXA C   6       2.812  25.733   9.935  1.00 18.26         C C  
+HETATM    7  O3  PXA C   6       2.591  26.436   8.943  1.00 19.24         C O  
+HETATM    8  C4  PXA C   6       2.996  26.334  11.199  1.00 16.69         C C  
+HETATM    9  O5  PXA C   6       3.403  26.063  13.558  1.00 17.97         C O  
+HETATM   10  C6  PXA C   6       3.768  25.785  15.972  1.00 24.16         C C  
+HETATM   11  C7  PXA C   6       3.961  24.852  17.007  1.00 20.55         C C  
+HETATM   12  N8  PXA C   6       3.984  23.551  16.753  1.00 23.49         C N  
+HETATM   13  C9  PXA C   6       3.835  23.024  15.552  1.00 28.76         C C  
+HETATM   14  C0' PXA C   6       3.859  21.639  15.347  1.00 38.08         C C  
+HETATM   15  O1' PXA C   6       4.929  21.107  15.078  1.00 53.00         C O  
+HETATM   16  N10 PXA C   6       3.490  23.340  13.240  1.00 11.63         C N  
+HETATM   17  C11 PXA C   6       3.287  24.081  12.176  1.00 15.22         C C  
+HETATM   18  C12 PXA C   6       3.236  25.512  12.325  1.00 17.45         C C  
+HETATM   19  C13 PXA C   6       3.604  25.273  14.642  1.00 22.27         C C  
+HETATM   20  C14 PXA C   6       3.644  23.859  14.441  1.00 21.19         C C  
+HETATM   21  C15 PXA C   6       2.916  27.849  11.345  1.00 15.08         C C  
+HETATM   22  C16 PXA C   6       3.738  27.275  16.325  1.00 18.65         C C  
+HETATM   23 HN21 PXA C   6       2.520  24.402   7.802  0.00  0.13         C H  
+HETATM   24 HN22 PXA C   6       2.722  22.796   8.450  0.00 -0.69         C H  
+END   

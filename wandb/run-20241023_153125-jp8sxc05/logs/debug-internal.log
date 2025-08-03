@@ -1,0 +1,280 @@
+2024-10-23 15:31:52,352 INFO    StreamThr :367494 [internal.py:wandb_internal():86] W&B internal server running at pid: 367494, started at: 2024-10-23 15:31:52.341578
+2024-10-23 15:31:52,358 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status
+2024-10-23 15:31:52,361 INFO    WriterThread:367494 [datastore.py:open_for_write():85] open: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/run-jp8sxc05.wandb
+2024-10-23 15:31:52,363 DEBUG   SenderThread:367494 [sender.py:send():380] send: header
+2024-10-23 15:31:52,363 DEBUG   SenderThread:367494 [sender.py:send():380] send: run
+2024-10-23 15:31:52,736 INFO    SenderThread:367494 [dir_watcher.py:__init__():211] watching files in: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files
+2024-10-23 15:31:52,737 INFO    SenderThread:367494 [sender.py:_start_run_threads():1122] run started: jp8sxc05 with start time 1729711911.494012
+2024-10-23 15:31:52,757 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: check_version
+2024-10-23 15:31:52,757 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: check_version
+2024-10-23 15:31:52,894 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: run_start
+2024-10-23 15:31:52,962 DEBUG   HandlerThread:367494 [system_info.py:__init__():32] System info init
+2024-10-23 15:31:52,962 DEBUG   HandlerThread:367494 [system_info.py:__init__():47] System info init done
+2024-10-23 15:31:52,962 INFO    HandlerThread:367494 [system_monitor.py:start():181] Starting system monitor
+2024-10-23 15:31:52,962 INFO    SystemMonitor:367494 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2024-10-23 15:31:52,962 INFO    HandlerThread:367494 [system_monitor.py:probe():201] Collecting system info
+2024-10-23 15:31:52,963 INFO    SystemMonitor:367494 [interfaces.py:start():190] Started cpu monitoring
+2024-10-23 15:31:52,964 INFO    SystemMonitor:367494 [interfaces.py:start():190] Started disk monitoring
+2024-10-23 15:31:52,965 INFO    SystemMonitor:367494 [interfaces.py:start():190] Started memory monitoring
+2024-10-23 15:31:52,965 INFO    SystemMonitor:367494 [interfaces.py:start():190] Started network monitoring
+2024-10-23 15:31:53,033 DEBUG   HandlerThread:367494 [system_info.py:probe():196] Probing system
+2024-10-23 15:31:53,035 DEBUG   HandlerThread:367494 [system_info.py:_probe_git():181] Probing git
+2024-10-23 15:31:53,068 DEBUG   HandlerThread:367494 [system_info.py:_probe_git():189] Probing git done
+2024-10-23 15:31:53,069 DEBUG   HandlerThread:367494 [system_info.py:probe():244] Probing system done
+2024-10-23 15:31:53,069 DEBUG   HandlerThread:367494 [system_monitor.py:probe():210] {'os': 'Linux-4.18.0-513.24.1.el8_9.x86_64-x86_64-with-glibc2.28', 'python': '3.9.20', 'heartbeatAt': '2024-10-23T19:31:53.033506', 'startedAt': '2024-10-23T19:31:25.319248', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/SaisaiSun/RLaffinity.git', 'commit': '97707a85c170d4c5d5b4a47b7979431f9d9b7021'}, 'email': None, 'root': '/blue/yanjun.li/tzutang.lin/RLaffinity', 'host': 'login12.ufhpc', 'username': 'tzutang.lin', 'executable': '/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/bin/python', 'cpu_count': 64, 'cpu_count_logical': 64, 'cpu_freq': {'current': 3026.2916875, 'min': 1500.0, 'max': 4041.8450000000007}, 'cpu_freq_per_core': [{'current': 3939.895, 'min': 1500.0, 'max': 4041.845}, {'current': 3894.956, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 3812.519, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 3739.804, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 3930.956, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 3941.595, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 3940.228, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 3941.14, 'min': 1500.0, 'max': 4041.845}, {'current': 3940.31, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 3940.462, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 3939.597, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}, {'current': 3940.883, 'min': 1500.0, 'max': 4041.845}, {'current': 2950.0, 'min': 1500.0, 'max': 4041.845}], 'disk': {'/': {'total': 870.9592895507812, 'used': 26.112411499023438}}, 'memory': {'total': 502.6645278930664}}
+2024-10-23 15:31:53,069 INFO    HandlerThread:367494 [system_monitor.py:probe():211] Finished collecting system info
+2024-10-23 15:31:53,069 INFO    HandlerThread:367494 [system_monitor.py:probe():214] Publishing system info
+2024-10-23 15:31:53,069 DEBUG   HandlerThread:367494 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-10-23 15:31:53,070 DEBUG   HandlerThread:367494 [system_info.py:_save_pip():68] Saving pip packages done
+2024-10-23 15:31:53,071 DEBUG   HandlerThread:367494 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-10-23 15:31:53,077 ERROR   HandlerThread:367494 [system_info.py:_save_conda():86] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/site-packages/wandb/sdk/internal/system/system_info.py", line 82, in _save_conda
+    subprocess.call(
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/blue/yanjun.li/tzutang.lin/.conda/envs/RLaffinity/lib/python3.9/subprocess.py", line 1837, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-10-23 15:31:53,078 DEBUG   HandlerThread:367494 [system_info.py:_save_conda():87] Saving conda packages done
+2024-10-23 15:31:53,080 INFO    HandlerThread:367494 [system_monitor.py:probe():216] Finished publishing system info
+2024-10-23 15:31:53,080 DEBUG   SenderThread:367494 [sender.py:send():380] send: files
+2024-10-23 15:31:53,081 INFO    SenderThread:367494 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2024-10-23 15:31:53,098 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: stop_status
+2024-10-23 15:31:53,098 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: stop_status
+2024-10-23 15:31:53,098 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: internal_messages
+2024-10-23 15:31:53,218 DEBUG   SenderThread:367494 [sender.py:send():380] send: telemetry
+2024-10-23 15:31:53,532 INFO    wandb-upload_0:367494 [upload_job.py:push():131] Uploaded file /tmp/tmpicoky5mlwandb/8d66913c-wandb-metadata.json
+2024-10-23 15:31:53,741 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_created():271] file/dir created: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/conda-environment.yaml
+2024-10-23 15:31:53,742 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_created():271] file/dir created: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/requirements.txt
+2024-10-23 15:31:53,742 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_created():271] file/dir created: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/wandb-metadata.json
+2024-10-23 15:31:56,784 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_created():271] file/dir created: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:31:57,596 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:31:58,785 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:31:59,785 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:02,766 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:07,815 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:08,121 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: internal_messages
+2024-10-23 15:32:08,122 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: stop_status
+2024-10-23 15:32:08,122 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: stop_status
+2024-10-23 15:32:08,859 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:13,040 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:13,265 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:15,063 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:17,080 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:19,086 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:19,174 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:23,127 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: stop_status
+2024-10-23 15:32:23,128 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: internal_messages
+2024-10-23 15:32:23,129 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: stop_status
+2024-10-23 15:32:23,271 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: partial_history
+2024-10-23 15:32:23,272 DEBUG   SenderThread:367494 [sender.py:send():380] send: history
+2024-10-23 15:32:23,273 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: summary_record
+2024-10-23 15:32:23,275 INFO    SenderThread:367494 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-10-23 15:32:24,151 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:24,152 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_created():271] file/dir created: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/wandb-summary.json
+2024-10-23 15:32:24,335 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:25,177 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:25,184 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/config.yaml
+2024-10-23 15:32:27,185 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:29,194 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:30,150 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:31,207 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:33,218 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:35,238 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:35,955 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:37,348 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: partial_history
+2024-10-23 15:32:37,349 DEBUG   SenderThread:367494 [sender.py:send():380] send: history
+2024-10-23 15:32:37,349 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: summary_record
+2024-10-23 15:32:37,352 INFO    SenderThread:367494 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-10-23 15:32:38,127 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: internal_messages
+2024-10-23 15:32:38,127 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: stop_status
+2024-10-23 15:32:38,127 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: stop_status
+2024-10-23 15:32:38,405 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/wandb-summary.json
+2024-10-23 15:32:38,409 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:39,444 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:41,376 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:41,457 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:43,477 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:45,486 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:47,047 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:47,562 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:49,581 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:51,460 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: partial_history
+2024-10-23 15:32:51,461 DEBUG   SenderThread:367494 [sender.py:send():380] send: history
+2024-10-23 15:32:51,461 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: summary_record
+2024-10-23 15:32:51,464 INFO    SenderThread:367494 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-10-23 15:32:51,590 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/wandb-summary.json
+2024-10-23 15:32:52,474 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:52,761 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:52,971 DEBUG   SystemMonitor:367494 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2024-10-23 15:32:53,034 DEBUG   SenderThread:367494 [sender.py:send():380] send: stats
+2024-10-23 15:32:53,132 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: stop_status
+2024-10-23 15:32:53,132 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: stop_status
+2024-10-23 15:32:53,147 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: internal_messages
+2024-10-23 15:32:53,754 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:55,810 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:57,850 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:32:58,378 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:32:59,879 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:01,890 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:03,922 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:04,202 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:33:05,303 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: partial_history
+2024-10-23 15:33:05,304 DEBUG   SenderThread:367494 [sender.py:send():380] send: history
+2024-10-23 15:33:05,304 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: summary_record
+2024-10-23 15:33:05,306 INFO    SenderThread:367494 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-10-23 15:33:05,958 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/wandb-summary.json
+2024-10-23 15:33:06,964 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:07,985 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:08,132 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: stop_status
+2024-10-23 15:33:08,154 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: internal_messages
+2024-10-23 15:33:08,154 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: stop_status
+2024-10-23 15:33:10,029 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:33:10,032 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:12,048 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:14,049 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:15,563 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:33:16,076 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:18,824 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: partial_history
+2024-10-23 15:33:18,825 DEBUG   SenderThread:367494 [sender.py:send():380] send: history
+2024-10-23 15:33:18,825 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: summary_record
+2024-10-23 15:33:18,827 INFO    SenderThread:367494 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-10-23 15:33:18,853 DEBUG   SenderThread:367494 [sender.py:send():380] send: telemetry
+2024-10-23 15:33:18,853 DEBUG   SenderThread:367494 [sender.py:send():380] send: exit
+2024-10-23 15:33:18,854 INFO    SenderThread:367494 [sender.py:send_exit():585] handling exit code: 0
+2024-10-23 15:33:18,854 INFO    SenderThread:367494 [sender.py:send_exit():587] handling runtime: 85
+2024-10-23 15:33:18,855 INFO    SenderThread:367494 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-10-23 15:33:18,855 INFO    SenderThread:367494 [sender.py:send_exit():593] send defer
+2024-10-23 15:33:18,855 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:18,855 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 0
+2024-10-23 15:33:18,856 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:18,856 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-10-23 15:33:18,856 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 1
+2024-10-23 15:33:18,856 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:18,856 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 1
+2024-10-23 15:33:18,856 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:18,856 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-10-23 15:33:18,856 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 2
+2024-10-23 15:33:18,856 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:18,856 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 2
+2024-10-23 15:33:18,856 INFO    HandlerThread:367494 [system_monitor.py:finish():190] Stopping system monitor
+2024-10-23 15:33:18,856 DEBUG   SystemMonitor:367494 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2024-10-23 15:33:18,858 INFO    HandlerThread:367494 [interfaces.py:finish():202] Joined cpu monitor
+2024-10-23 15:33:18,858 DEBUG   SystemMonitor:367494 [system_monitor.py:_start():170] Publishing last batch of metrics
+2024-10-23 15:33:18,858 INFO    HandlerThread:367494 [interfaces.py:finish():202] Joined disk monitor
+2024-10-23 15:33:18,859 INFO    HandlerThread:367494 [interfaces.py:finish():202] Joined memory monitor
+2024-10-23 15:33:18,859 INFO    HandlerThread:367494 [interfaces.py:finish():202] Joined network monitor
+2024-10-23 15:33:18,859 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:18,860 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-10-23 15:33:18,860 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 3
+2024-10-23 15:33:18,860 DEBUG   SenderThread:367494 [sender.py:send():380] send: stats
+2024-10-23 15:33:18,860 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:18,860 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 3
+2024-10-23 15:33:18,860 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:18,861 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-10-23 15:33:18,861 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 4
+2024-10-23 15:33:18,861 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:18,861 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 4
+2024-10-23 15:33:18,861 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:18,861 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-10-23 15:33:18,861 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 5
+2024-10-23 15:33:18,861 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:18,861 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 5
+2024-10-23 15:33:18,861 DEBUG   SenderThread:367494 [sender.py:send():380] send: summary
+2024-10-23 15:33:18,862 INFO    SenderThread:367494 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2024-10-23 15:33:18,863 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:18,863 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-10-23 15:33:18,863 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 6
+2024-10-23 15:33:18,863 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:18,863 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 6
+2024-10-23 15:33:18,863 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:18,863 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-10-23 15:33:18,867 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: status_report
+2024-10-23 15:33:18,950 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 7
+2024-10-23 15:33:18,950 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:18,950 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 7
+2024-10-23 15:33:18,950 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:18,950 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-10-23 15:33:19,100 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/wandb-summary.json
+2024-10-23 15:33:19,100 INFO    Thread-25 :367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/config.yaml
+2024-10-23 15:33:19,854 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: poll_exit
+2024-10-23 15:33:20,438 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 8
+2024-10-23 15:33:20,438 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: poll_exit
+2024-10-23 15:33:20,438 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:20,438 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 8
+2024-10-23 15:33:20,439 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:20,439 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-10-23 15:33:20,439 INFO    SenderThread:367494 [job_builder.py:build():281] Attempting to build job artifact
+2024-10-23 15:33:20,440 INFO    SenderThread:367494 [job_builder.py:_get_source_type():393] is repo sourced job
+2024-10-23 15:33:20,440 INFO    SenderThread:367494 [job_builder.py:_get_program_relpath():411] run is notebook based run
+2024-10-23 15:33:20,440 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 9
+2024-10-23 15:33:20,441 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:20,441 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 9
+2024-10-23 15:33:20,441 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:20,441 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-10-23 15:33:20,441 INFO    SenderThread:367494 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-10-23 15:33:20,855 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: poll_exit
+2024-10-23 15:33:21,102 INFO    SenderThread:367494 [dir_watcher.py:_on_file_modified():288] file/dir modified: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:21,103 INFO    SenderThread:367494 [dir_watcher.py:finish():388] scan: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files
+2024-10-23 15:33:21,103 INFO    SenderThread:367494 [dir_watcher.py:finish():402] scan save: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log output.log
+2024-10-23 15:33:21,103 INFO    SenderThread:367494 [dir_watcher.py:finish():402] scan save: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/config.yaml config.yaml
+2024-10-23 15:33:21,104 INFO    SenderThread:367494 [dir_watcher.py:finish():402] scan save: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/requirements.txt requirements.txt
+2024-10-23 15:33:21,109 INFO    SenderThread:367494 [dir_watcher.py:finish():402] scan save: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/wandb-summary.json wandb-summary.json
+2024-10-23 15:33:21,111 INFO    SenderThread:367494 [dir_watcher.py:finish():402] scan save: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/conda-environment.yaml conda-environment.yaml
+2024-10-23 15:33:21,113 INFO    SenderThread:367494 [dir_watcher.py:finish():402] scan save: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/wandb-metadata.json wandb-metadata.json
+2024-10-23 15:33:21,113 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 10
+2024-10-23 15:33:21,113 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: poll_exit
+2024-10-23 15:33:21,113 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:21,113 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 10
+2024-10-23 15:33:21,113 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:21,114 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-10-23 15:33:21,114 INFO    SenderThread:367494 [file_pusher.py:finish():175] shutting down file pusher
+2024-10-23 15:33:21,402 INFO    wandb-upload_0:367494 [upload_job.py:push():131] Uploaded file /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/output.log
+2024-10-23 15:33:21,462 INFO    wandb-upload_1:367494 [upload_job.py:push():131] Uploaded file /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/config.yaml
+2024-10-23 15:33:21,477 INFO    wandb-upload_3:367494 [upload_job.py:push():131] Uploaded file /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/wandb-summary.json
+2024-10-23 15:33:21,487 INFO    wandb-upload_2:367494 [upload_job.py:push():131] Uploaded file /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/files/requirements.txt
+2024-10-23 15:33:21,688 INFO    Thread-24 :367494 [sender.py:transition_state():613] send defer: 11
+2024-10-23 15:33:21,688 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:21,689 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 11
+2024-10-23 15:33:21,689 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:21,689 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-10-23 15:33:21,689 INFO    SenderThread:367494 [file_pusher.py:join():181] waiting for file pusher
+2024-10-23 15:33:21,689 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 12
+2024-10-23 15:33:21,689 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:21,689 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 12
+2024-10-23 15:33:21,689 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:21,689 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-10-23 15:33:21,690 INFO    SenderThread:367494 [file_stream.py:finish():595] file stream finish called
+2024-10-23 15:33:21,855 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: poll_exit
+2024-10-23 15:33:22,045 INFO    SenderThread:367494 [file_stream.py:finish():599] file stream finish is done
+2024-10-23 15:33:22,045 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 13
+2024-10-23 15:33:22,045 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: poll_exit
+2024-10-23 15:33:22,045 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:22,045 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 13
+2024-10-23 15:33:22,046 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:22,046 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-10-23 15:33:22,046 INFO    SenderThread:367494 [sender.py:transition_state():613] send defer: 14
+2024-10-23 15:33:22,046 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: defer
+2024-10-23 15:33:22,046 DEBUG   SenderThread:367494 [sender.py:send():380] send: final
+2024-10-23 15:33:22,046 INFO    HandlerThread:367494 [handler.py:handle_request_defer():170] handle defer: 14
+2024-10-23 15:33:22,046 DEBUG   SenderThread:367494 [sender.py:send():380] send: footer
+2024-10-23 15:33:22,046 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: defer
+2024-10-23 15:33:22,047 INFO    SenderThread:367494 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-10-23 15:33:22,047 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: internal_messages
+2024-10-23 15:33:22,047 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: poll_exit
+2024-10-23 15:33:22,047 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: poll_exit
+2024-10-23 15:33:22,048 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: server_info
+2024-10-23 15:33:22,048 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: get_summary
+2024-10-23 15:33:22,048 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: sampled_history
+2024-10-23 15:33:22,048 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: server_info
+2024-10-23 15:33:22,049 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: job_info
+2024-10-23 15:33:22,112 DEBUG   SenderThread:367494 [sender.py:send_request():407] send_request: job_info
+2024-10-23 15:33:22,113 DEBUG   HandlerThread:367494 [handler.py:handle_request():144] handle_request: shutdown
+2024-10-23 15:33:22,113 INFO    HandlerThread:367494 [handler.py:finish():844] shutting down handler
+2024-10-23 15:33:23,050 INFO    WriterThread:367494 [datastore.py:close():294] close: /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_153125-jp8sxc05/run-jp8sxc05.wandb
+2024-10-23 15:33:23,112 INFO    SenderThread:367494 [sender.py:finish():1534] shutting down sender
+2024-10-23 15:33:23,112 INFO    SenderThread:367494 [file_pusher.py:finish():175] shutting down file pusher
+2024-10-23 15:33:23,112 INFO    SenderThread:367494 [file_pusher.py:join():181] waiting for file pusher

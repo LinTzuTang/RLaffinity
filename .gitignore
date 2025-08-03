@@ -1,0 +1,13 @@
+*.ipynb
+__pycache__
+pdbbind_not_in_hariboss.csv
+processed_data
+split_dir
+output_*
+pdbbind_output_dir
+.ipynb_checkpoints
+pdbbind_data
+pdbbind_output_mdb
+output_RLaffinity
+pth
+.DS_Store

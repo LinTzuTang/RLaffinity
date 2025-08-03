@@ -1,0 +1,36 @@
+2024-10-23 16:21:20,515 INFO    MainThread:1847695 [wandb_setup.py:_flush():76] Current SDK version is 0.15.11
+2024-10-23 16:21:20,517 INFO    MainThread:1847695 [wandb_setup.py:_flush():76] Configure stats pid to 1847695
+2024-10-23 16:21:20,517 INFO    MainThread:1847695 [wandb_setup.py:_flush():76] Loading settings from /home/tzutang.lin/.config/wandb/settings
+2024-10-23 16:21:20,517 INFO    MainThread:1847695 [wandb_setup.py:_flush():76] Loading settings from /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/settings
+2024-10-23 16:21:20,517 INFO    MainThread:1847695 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-10-23 16:21:20,517 INFO    MainThread:1847695 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-10-23 16:21:20,517 INFO    MainThread:1847695 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'RLaffinity/train_model_pdbbind.py', 'program_abspath': '/blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/train_model_pdbbind.py', 'program': '/blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/train_model_pdbbind.py'}
+2024-10-23 16:21:20,518 INFO    MainThread:1847695 [wandb_init.py:_log_setup():528] Logging user logs to /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_162120-pg29kvus/logs/debug.log
+2024-10-23 16:21:20,518 INFO    MainThread:1847695 [wandb_init.py:_log_setup():529] Logging internal logs to /blue/yanjun.li/tzutang.lin/RLaffinity/RLaffinity/wandb/run-20241023_162120-pg29kvus/logs/debug-internal.log
+2024-10-23 16:21:20,518 INFO    MainThread:1847695 [wandb_init.py:init():568] calling init triggers
+2024-10-23 16:21:20,518 INFO    MainThread:1847695 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {'data_dir': 'pdbbind_output_mdb/split/data', 'mode': 'test', 'output_dir': 'output_train/rep_3', 'unobserved': False, 'learning_rate': 0.0001, 'conv_drop_rate': 0.1, 'fc_drop_rate': 0.25, 'num_epochs': 300, 'num_conv': 4, 'batch_norm': False, 'no_dropout': False, 'batch_size': 16, 'random_seed': 964695}
+2024-10-23 16:21:20,518 INFO    MainThread:1847695 [wandb_init.py:init():593] re-initializing run, found existing run on stack: 423bj46d
+2024-10-23 16:21:20,518 INFO    MainThread:1847695 [wandb_run.py:_finish():1934] finishing run tzu-tang-lin/3D_CNN_LBA/423bj46d
+2024-10-23 16:21:20,518 INFO    MainThread:1847695 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2024-10-23 16:21:20,518 INFO    MainThread:1847695 [wandb_run.py:_restore():2151] restore
+2024-10-23 16:21:20,519 INFO    MainThread:1847695 [wandb_run.py:_restore():2157] restore done
+2024-10-23 16:21:49,022 INFO    MainThread:1847695 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2024-10-23 16:21:49,023 INFO    MainThread:1847695 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2024-10-23 16:21:49,030 INFO    MainThread:1847695 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2024-10-23 16:21:51,032 INFO    MainThread:1847695 [wandb_init.py:init():618] starting backend
+2024-10-23 16:21:51,032 INFO    MainThread:1847695 [wandb_init.py:init():622] setting up manager
+2024-10-23 16:21:51,033 INFO    MainThread:1847695 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-10-23 16:21:51,034 INFO    MainThread:1847695 [wandb_init.py:init():628] backend started and connected
+2024-10-23 16:21:51,035 INFO    MainThread:1847695 [wandb_init.py:init():720] updated telemetry
+2024-10-23 16:21:51,089 INFO    MainThread:1847695 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-10-23 16:21:51,620 INFO    MainThread:1847695 [wandb_run.py:_on_init():2220] communicating current version
+2024-10-23 16:21:51,667 INFO    MainThread:1847695 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.18.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-10-23 16:21:51,667 INFO    MainThread:1847695 [wandb_init.py:init():804] starting run threads in backend
+2024-10-23 16:21:54,922 INFO    MainThread:1847695 [wandb_run.py:_console_start():2199] atexit reg
+2024-10-23 16:21:54,922 INFO    MainThread:1847695 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2024-10-23 16:21:54,922 INFO    MainThread:1847695 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2024-10-23 16:21:54,922 INFO    MainThread:1847695 [wandb_run.py:_redirect():2144] Redirects installed.
+2024-10-23 16:21:54,923 INFO    MainThread:1847695 [wandb_init.py:init():845] run started, returning control to user process
+2024-10-23 16:34:16,900 WARNING MsgRouterThr:1847695 [router.py:message_loop():77] message_loop has been closed
